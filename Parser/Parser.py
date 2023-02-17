@@ -4,7 +4,7 @@ import csv
 from itertools import zip_longest
 import gspread
 
-gs = gspread.service_account(filename='credits.json')  # подключаем файл с ключами и пр.
+gs = gspread.service_account(filename='../credits.json')  # подключаем файл с ключами и пр.
 sh = gs.open_by_key('1k-gbn43tX6AxE7-TqxlZa7-zWbSh4G_IYU8lgRo5ys4')  # подключаем таблицу по ID
 worksheet = sh.sheet1  # получаем первый лист
 
